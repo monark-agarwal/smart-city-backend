@@ -1,0 +1,16 @@
+{
+  "name": "issue-service",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": { "start": "node src/index.js" },
+  "dependencies": {
+  "express": "^4.18.2",
+  "express-graphql": "^0.12.0",
+  "graphql": "^15.8.0",
+  "sequelize": "^6.32.1",
+  "mysql2": "^3.5.2",
+  "kafkajs": "^2.2.4",
+  "dotenv": "^16.3.1",
+  "jsonwebtoken": "^9.0.2"
+}
+}

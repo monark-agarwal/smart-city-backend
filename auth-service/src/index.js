@@ -1,0 +1,1 @@
+const express=require('express');const sequelize=require('./db/connection');const authRoutes=require('./routes/auth');const app=express();app.use(express.json());app.use('/auth',authRoutes);(async()=>{await sequelize.sync({alter:true});app.listen(process.env.PORT||5000,()=>console.log('Auth Service running on port 5000'));})();
